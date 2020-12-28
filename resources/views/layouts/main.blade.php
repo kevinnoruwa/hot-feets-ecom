@@ -63,7 +63,7 @@
     @yield('content')
 
     
-    {{-- <section id="newsletter-section">
+    <section id="newsletter-section">
         <div class="inside">
             <div class="details-box">
                 <p>Be the first one to hear about new releases, and special deals</p>
@@ -76,7 +76,7 @@
                 <a class=" refer" href="#">Refer to a friend</a>
             </div>
         </div>
-    </section> --}}
+    </section>
 
     <section id="mobil">
         <div class="icon">
