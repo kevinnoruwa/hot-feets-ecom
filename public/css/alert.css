@@ -1,0 +1,25 @@
+.alert {
+    background: rgba(66, 186, 150, 0.2); 
+    text-align: center ;
+    border-radius: 20px;
+    margin: 60px auto;
+    font-weight: 300;
+    padding: 5px 0;
+    width: 280px;
+    margin-bottom: 70px;
+  
+}
+
+.red-alert {
+    background: rgba(243, 6, 65, 0.459); 
+    text-align: center ;
+    border-radius: 20px;
+    margin: 60px auto;
+    font-weight: 300;
+    padding: 5px 0;
+    width: 280px;
+    margin-bottom: 70px;
+  
+}
+
+  

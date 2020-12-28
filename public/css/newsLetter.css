@@ -1,0 +1,51 @@
+#newsletter-section .inside {
+    padding: 0px 0;
+    background: #f8f8f8;
+
+}
+
+
+#newsletter-section .inside {
+    grid-template-columns: 1fr 27px 1fr;
+    padding: 40px 70px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+
+}
+#newsletter-section .inside .details-box p {
+    margin: 0 0 30px;
+    
+}
+
+
+#newsletter-section .inside .details-box input {
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+
+#newsletter-section .inside .details-box .sign-up-btn  {
+    display: inline-block;
+    background: #1e1e1e;
+    padding: 10px;
+    color: #fff;
+
+}
+
+
+#newsletter-section .inside .details-box .refer  {
+    background: #1e1e1e;
+    padding: 12px 40px;
+    color: #fff;
+
+}
+#newsletter-section .inside  .border  {
+
+   border-right: 1px solid #1e1e1e;
+    position: relative;
+    height: 200px;
+}

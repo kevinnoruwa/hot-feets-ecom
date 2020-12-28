@@ -1,0 +1,34 @@
+#extras-item .header {
+    border-top: .5px solid rgba(0, 0,0,.1); 
+    border-bottom: .5px solid rgba(0, 0,0,.1); 
+    text-align: center;
+    padding: 10px 0;
+   
+
+}
+
+#extras-item .content {
+    max-width: 1300px;
+    padding: 50px 0 160px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+#extras-item .content .inside{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 70px 0;
+    display: grid;
+   
+}
+
+#extras-item .content .inside .shoe-img img{
+    max-width: 400px;
+    width: 400px; 
+}
+
+
+
+#extras-item .content .inside .details{
+    text-align: center;
+}
+

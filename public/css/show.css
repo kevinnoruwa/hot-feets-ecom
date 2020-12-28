@@ -1,0 +1,154 @@
+#show-section {
+    padding: 130px 0 ;
+}
+
+#show-section .breadcrumbs  {
+    position: relative;
+    left: 21px;
+
+    
+}
+
+#show-section .breadcrumbs a {
+    padding: 0 5px;
+}
+#show-section .inside {
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1400px;
+    grid-gap: 0 12px;
+    margin: 0 auto; 
+    display: grid;
+    width: 1400px; 
+}
+
+#show-section .inside .shoe-img img {
+   max-width: 800px;
+}
+
+#show-section .inside .show-info .brand {
+    font-size: 1.5rem;
+
+    
+}
+#show-section .inside .show-info .name {
+    font-size: 1.2rem;
+
+    
+}
+
+#show-section .inside .show-info .price {
+    font-size: 1.2rem;
+    color:  rgb(164, 29, 35);
+ 
+
+    
+}
+#show-section .inside .show-info input[type="number"] {
+ 
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0,0 ,0.2);
+    padding: 4px;
+    outline: none;
+    position: relative;
+    display: block;
+    margin: 20px;
+    
+   }
+
+
+#show-section .inside .show-info .select  {
+  text-align:center;
+  margin: 2px 0 0 0;
+     
+ }
+
+#show-section .inside .show-info .select select {
+   background:  rgb(164, 29, 35);
+   margin: 0 auto;
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    outline: none;
+
+    
+}
+
+#show-section .inside .show-info .select button {
+
+    position: relative;
+    outline: none;
+    background: #f8f8f8;
+    color:  rgb(164, 29, 35);
+    border: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    top: 10px;
+    
+ 
+ 
+     
+ }
+
+#show-section .inside .show-info .hr {
+    position: relative;
+    top: 20px;
+
+ 
+     
+ }
+
+
+#show-section .inside .show-info .details {
+    position: relative;
+    top: 25px;
+      
+ }
+
+ #show-section .inside .show-info .details p {
+    text-align: justify;
+      
+ }
+ #extras  {
+     padding: 65px 0;
+ }
+
+ #extras h2 {
+     margin: 0 0 35px;
+     text-align: center;
+     font-size: 2rem;
+
+ }
+
+
+ #extras .item  {
+     margin: 0;
+ }
+
+ #extras .item  img {
+    margin: 0 auto;
+    width: 400px;
+    
+    
+    
+
+}
+#extras .item  .details {
+   text-align: center;
+   font-size: .9rem;
+   position: relative;
+
+
+}
+
+ 
+@media only screen and (min-width: 1400px) {
+    #extras .container {
+        width: 1400px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+}

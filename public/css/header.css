@@ -1,0 +1,171 @@
+
+
+
+
+
+
+
+
+
+
+header {
+    box-shadow:  0 0 2px rgba(0 , 0 ,0, 0.1);
+    background: #f8f8f8;
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    right: 0;
+    z-index: 10;
+}
+
+
+header .inside {
+    padding: 15px 0 5px;
+
+    
+ }
+
+ .hr {
+    border: 0;
+    height: 0;
+    padding: 2px  0  2px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+   
+      
+    
+ }
+
+ 
+header .inside .header-title-cart {
+    grid-template-columns:   37fr 1fr;
+    justify-items: center ;
+    display: grid; 
+    
+ }
+
+ header .inside .header-title-cart .menu {
+     display: none;
+     font-size: 1.2rem;
+     cursor: pointer;
+
+ }
+
+
+ header .inside .header-title-cart h1 {
+   font-size: 2rem;
+   font-weight: 800
+    
+ }
+
+
+ 
+ header .inside .header-title-cart h1 .r-symbol {
+     position: relative;
+    font-size: .7rem;
+    bottom: 20px;
+     
+  }
+
+   
+header .inside .header-title-cart .cart {
+    position: relative;
+    font-size: 1.2rem;
+    right: 20px
+   
+ }
+
+
+   .header-nav  {
+    justify-content: center;
+    background: #f8f8f8;
+    transition: top 0.3s;
+    align-items: center;
+    position: fixed;
+    padding: 5px 0;
+    display: flex;
+    width: 100%; 
+    z-index: 10;
+    top: 61px;
+    left: 0;
+    right: 0;  
+  
+
+ }
+
+
+ .header-nav ul {
+    position: relative;
+    padding: 0 0 9px;
+    display: flex;
+    left: -21px;
+    top: 3px;
+
+}
+
+
+ .header-nav ul li  {
+    display: inline-block;
+  
+}
+.header-nav ul li a  {
+    transition: all .3s ease-in-out;
+    padding: 10px 35px;
+    
+  
+}
+
+.header-nav ul li a:hover {
+    color: rgb(164, 29, 35);
+    
+  
+}
+
+.inside-shoes {
+    
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+    font-size: .9rem;
+    padding: 20px 0 20px;
+    background:#fff;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 93px;
+    opacity: 0;
+    z-index: 11;
+
+   
+}
+
+
+.inside-shoes.active {
+    visibility: visible;
+    opacity: 1;
+
+
+   
+}
+
+.inside-shoes  .container {
+    justify-content: center;
+    display: flex;
+}
+
+
+.inside-shoes  .container a {
+    transition: all .3s ease-in-out;
+    padding: 10px 35px
+}
+
+
+
+.inside-shoes  .container a:hover {
+    color: rgb(164, 29, 35);
+    
+}
+
+
+
+

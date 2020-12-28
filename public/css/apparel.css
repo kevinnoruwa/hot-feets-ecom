@@ -1,0 +1,60 @@
+
+#appareal {
+    position: relative;
+    padding: 0 0 25px;
+    top: -81px;
+}
+
+#appareal .header {
+    text-transform: capitalize;
+    background: #f8f8f8;
+    text-align: center;
+    padding: 10px 10px 10px 0;
+}
+
+#appareal .header .title {
+    position: relative;
+    left: 15px;
+}
+
+#appareal .header a {
+    color: rgb(164, 29, 35);
+    position: relative;
+    font-size: .9rem;
+    float: right;
+    padding: 8px;
+    top: -8px;
+}
+
+#appareal .cloths .container  {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1150px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    grid-gap: 40px 0;
+    top: 50px;
+
+}
+
+
+
+#appareal .cloths .container .clothes-box .img img {
+    max-width: 383px;
+    width: 220px;
+}
+
+
+#appareal .cloths .container .clothes-box .details {
+   text-align: center;
+}
+
+
+#appareal .cloths .container .clothes-box .details .highlight{
+    color: rgb(164, 29, 35);
+    margin: 5px 0 0;
+    
+}

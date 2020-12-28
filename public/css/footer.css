@@ -1,0 +1,32 @@
+footer {
+    background: #fff;
+    
+    height: 400px;
+}
+
+footer .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    position: relative;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    width: 1200px;
+    top: 85px;
+
+}
+
+
+footer .container li {
+   padding: 20px 0;
+
+}
+
+footer .mobil-extra {
+        
+    display: none;
+ 
+
+ }

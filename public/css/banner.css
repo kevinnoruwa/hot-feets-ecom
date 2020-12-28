@@ -1,0 +1,84 @@
+
+
+#banner-section {
+    background: url(https://i.postimg.cc/Fz5R0VDB/yeezy-onyx-background.png) center 61px no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 121px 0;
+    top: -81px
+}
+
+
+
+#banner-section .inside {
+    padding: 0 0 0 100px;
+    
+}
+
+
+
+#banner-section .inside .banner-box  {
+    display: inline-block;
+    width: 395px;
+    height: 220px;
+    background: #fff;
+    position: relative;
+    top: 84px;
+
+    
+}
+
+
+#banner-section .inside .banner-box  {
+    display: inline-block;
+    background: #fff;
+
+    
+}
+
+
+#banner-section .inside .banner-box .inside-box  {
+  padding: 20px;
+ 
+}
+#banner-section .inside .banner-box .inside-box li {
+    padding: 8px 0;
+   
+  }
+
+  #banner-section .inside .banner-box .inside-box li.highlight {
+    color: rgb(164, 29, 35);
+    font-size: 0.8rem;
+   
+  }
+
+  #banner-section .inside .banner-box .inside-box li.box-header {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+   
+  }
+
+  
+  #banner-section .inside .banner-box .inside-box li.small-text {
+    text-align: center;
+   font-size: 1rem;
+   font-weight: 300
+  }
+
+    
+  #banner-section .inside .banner-box .inside-box li.shop-now {
+   background: rgb(164, 29, 35);
+   border: 1px solid rgb(164, 29, 35);
+   display: inline-block;
+   position: relative;
+   left: 115px;
+   top: 10px;
+  }
+
+
+      
+  #banner-section .inside .banner-box .inside-box li.shop-now a {
+      color: white;
+      padding: 10px;
+   }

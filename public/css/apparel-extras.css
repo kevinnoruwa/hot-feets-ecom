@@ -1,0 +1,152 @@
+
+
+
+#apparel-extras {
+    padding: 50px 0;
+
+}
+
+#apparel-extras .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 1000px;
+
+
+}
+
+
+#apparel-extras .container .content {
+    
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap:;
+    display: grid;
+}
+
+#apparel-extras .container .content .img-box .img img {
+    width: 400px;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+
+#apparel-extras .container .content .img-box .details-box {
+    box-shadow: 0 0 3px rgba(0, 0,0, 0.1);
+    width: 360px;
+    height: 190px;
+    background: #fff;
+    position: relative;
+    top: -111px;
+
+   
+}
+
+#apparel-extras .container .content .img-box .details-box .contain{
+   padding: 10px 15px;
+
+   
+}
+
+
+#apparel-extras .container .content .img-box .details-box .contain .highlight { 
+    color: rgb(164, 29, 35);
+   font-size: .8rem;
+ 
+ 
+    
+ } 
+
+ #apparel-extras .container .content .img-box .details-box .contain .box-header { 
+    margin: 5px 0 0;
+    font-weight: 500;
+  
+  
+     
+  } 
+
+  #apparel-extras .container .content .img-box .details-box .contain .small-text { 
+    font-size: .9rem;
+    margin: 5px 0 12px;
+ 
+ 
+    
+ } 
+
+ #apparel-extras .container .content .img-box .details-box .contain .shop-now a { 
+    background: rgb(164, 29, 35);
+    font-size: .8rem;
+    color: #fff;
+    background: b(164, 29, 35);
+    padding: 6px 14px;
+ 
+    
+ } 
+#apparel-extras .container .content .img-box-2 .img img {
+    width: 400px;
+    max-width: 400px;
+    object-fit: cover;
+  
+}
+
+
+
+#apparel-extras .container .content .img-box-2 .details-box {
+    box-shadow: 0 0 3px rgba(0, 0,0, 0.1);
+    width: 360px;
+    height: 190px;
+    background: #fff;
+    position: relative;
+    top: -61px;
+    left: 19px;
+
+   
+}
+#apparel-extras .container .content .img-box-2 .details-box .contain{
+    padding: 10px 15px;
+ 
+    
+ }
+ 
+
+ #apparel-extras .container .content .img-box-2 .details-box .contain .highlight { 
+    color: rgb(164, 29, 35);
+   font-size: .8rem;
+ 
+ 
+    
+ } 
+
+ #apparel-extras .container .content .img-box-2 .details-box .contain .box-header { 
+    margin: 5px 0 0;
+   font-weight: 500;
+ 
+ 
+    
+ } 
+
+
+ 
+ #apparel-extras .container .content .img-box-2 .details-box .contain .small-text { 
+    font-size: .9rem;
+    margin: 5px 0 12px;
+ 
+ 
+    
+ } 
+
+ 
+
+ 
+ #apparel-extras .container .content .img-box-2 .details-box .contain .shop-now a { 
+    background: rgb(164, 29, 35);
+    font-size: .8rem;
+    color: #fff;
+    background: b(164, 29, 35);
+    padding: 6px 14px;
+ 
+    
+ } 
+
+
+

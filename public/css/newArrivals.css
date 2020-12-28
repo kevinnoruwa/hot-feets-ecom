@@ -1,0 +1,76 @@
+
+#new-arrivals {
+    
+    position: relative;
+    top: -81px
+}
+
+#new-arrivals .header {
+    text-transform: capitalize;
+    background: #f8f8f8;
+    text-align: center;
+    padding: 10px 10px 10px 0;
+   
+ 
+  
+}
+
+#new-arrivals .header .title {
+    position: relative;
+    left: 15px;
+
+
+}
+
+#new-arrivals .header a  {
+    color: rgb(164, 29, 35);
+    position: relative;
+    font-size: .9rem;
+    float: right;
+    padding: 8px;
+    top: -8px;
+    
+}
+
+
+
+#new-arrivals .shoes .container{
+    max-width: 1150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+   width: 1200px;
+   margin: 0 auto;
+   position: relative;
+   top: 50px;
+  
+    
+    
+}
+
+#new-arrivals .shoes .container .shoe-box{
+    
+    cursor: pointer;
+}
+
+#new-arrivals .shoes .container .shoe-box .shoe-img img{
+    max-width: 383px;
+    transition: all .3s ease ;
+    width: 366px;
+}
+
+#new-arrivals .shoes .container .shoe-box .shoe-img img:hover {
+    transform: scale(0.95)
+   
+}
+
+
+#new-arrivals .shoes .container .shoe-box .shoe-details{
+    text-align: center;
+}
+
+#new-arrivals .shoes .container .shoe-box .shoe-details .highlight {
+    color: rgb(164, 29, 35);
+    margin: 5px 0 0;
+}
