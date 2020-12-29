@@ -1,3 +1,10 @@
+<?php 
+
+use App\Models\Cart;
+
+?>
+
+
 @extends('layouts/main')
 
 @section('content')
@@ -11,7 +18,12 @@
                     </div>
                     @endif
                 <ul>
+                    <?php $totalPrice = 0?>
+
                     @forEach($products as $product)
+
+                    <?php $attrPrice = Cart::getProductAttrPrice($product['product_id'], $product['size']); ?>
+
                     <li>
                         <div class="container">
                             <div class="item-img">
@@ -23,16 +35,19 @@
                                 <span class="highlight dlt-btn">Delete</span>
                             </div>
                             <div class="item-price">
-                                <span class="highlight">${{$product->price * $product->quantity }}</span>
+                                <span class="highlight">${{ $product->price  * $product->quantity }}</span>
+       
+       
                             </div>
                         </div>
                     </li>
+                    <?php $totalPrice = $totalPrice + $attrPrice  *  $product->quantity ?>
                     @endforEach
                 </ul>
             </div>
             <div class="total-box">
-            <span>{{count($products) >  0 ? "Subtotal" : null }}({{count($products)}} {{count($products) !== 1 ? "items" : "item"}}): 
-            <span class="highlight">$500</span>
+            <span>{{count($products) >  0 ? "Subtotal" : null }}( {{count($products)}} {{count($products) !== 1 ? "items" : "item"}} ): 
+            <span class="highlight">${{$totalPrice}}</span>
                 </span>
                 <button class="btn-submit">Proceed to Buy</button>
             </div>

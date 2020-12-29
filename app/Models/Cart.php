@@ -19,4 +19,11 @@ class Cart extends Model
     // public function product(){
     //         return  $this->belongsTo('App\Models\nikes','product_id');
     //     }
+
+
+    public static  function  getProductAttrPrice($product_id, $size){
+        $attrPrice = Cart::select('price')->where(['product_id' => $product_id, "size" => $size])->first()->toArray();
+
+        return $attrPrice['price'];
+    }
 }

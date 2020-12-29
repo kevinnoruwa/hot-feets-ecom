@@ -163,6 +163,8 @@ class hotFeets extends Controller
 
     public function  shoppingcart()
     {
+
+        // $totalPrice = Cart::where('price', $id)->first();
         $products = Cart::all();
         if(count($products) === 0){
             $message = "your cart is empty";
