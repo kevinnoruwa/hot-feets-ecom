@@ -12,12 +12,12 @@
 @import './show.css';
 @import './allshoes.css';
 @import './apparel-show.css';
-@import './cart.css';
 @import './extras-show.css';
 @import './mobil.css'; 
 @import './extras.css'; 
 @import './all-appareal.css';
 @import './alert.css';
+@import './cart.css';
 /* @import './newsletter.css'; */
 
 
@@ -1254,7 +1254,7 @@ li {
         margin: 0;
     }
 
-    #cart .inside .items ul li .container .item-details span {
+    #cart .inside .items ul li .container .item-details form input.dlt-btn  {
      
         margin: 20px 0 0 9px;
     }

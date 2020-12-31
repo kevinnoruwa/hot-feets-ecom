@@ -238,4 +238,17 @@ class hotFeets extends Controller
         return redirect()->back();
 
     }
+
+
+    public function delete(Cart $item, $id)
+    {
+
+
+        $item = Cart::find($id);
+
+      
+        $item->delete();
+        return redirect()->back();
+      
+    }
 }

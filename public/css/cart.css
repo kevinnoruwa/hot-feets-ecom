@@ -66,11 +66,19 @@
 
 
 }
-#cart .inside .items ul li .container .item-details span {
+
+#cart .inside .items ul li .container .item-details  form {
+    display: inline;
+
+
+}
+#cart .inside .items ul li .container .item-details form input.dlt-btn {
     font-size: .8rem;
     margin: 20px 0 0 20px;
-
-
+    outline: none;
+    border: none;
+    background: white;
+    cursor: pointer;
 
 }
 

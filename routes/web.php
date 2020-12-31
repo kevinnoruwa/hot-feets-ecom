@@ -36,3 +36,9 @@ Route::get('/extras/{id}', 'App\Http\Controllers\hotFeets@extrasshow');
 // Add to cart Route
 
 Route::Post('/add-to-cart', 'App\Http\Controllers\hotFeets@addtocart');
+
+
+
+// delete item from cart
+
+Route::delete('/item/{id}','App\Http\Controllers\hotFeets@delete');

@@ -31,8 +31,15 @@ use App\Models\Cart;
                             </div>
                             <div class="item-details">
                                 <h6 class="name">{{$product->name}}</h6>
-                            <input max={{10}} min={{1}} type="number" placeholder="Qty: {{$product->quantity}}" disabled >
-                                <span class="highlight dlt-btn">Delete</span>
+                            <input  max={{10}} min={{1}} type="number" placeholder="Qty: {{$product->quantity}}" disabled >
+                                <form action="/item/{{$product->id}}" method="post">
+
+                                    @csrf 
+                                    <input type="hidden" name="_method" value="delete">
+                                    <input value="delete" type="submit" class="highlight dlt-btn">
+    
+                                </form>
+                               
                             </div>
                             <div class="item-price">
                                 <span class="highlight">${{ $product->price  * $product->quantity }}</span>
