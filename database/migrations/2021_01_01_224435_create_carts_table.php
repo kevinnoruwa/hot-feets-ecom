@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateJordansTable extends Migration
+class CreateCartsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,14 @@ class CreateJordansTable extends Migration
      */
     public function up()
     {
-        Schema::create('jordans', function (Blueprint $table) {
+        Schema::create('Carts', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 60);
-            $table->string('brand', 60);
-            $table->string('nickname', 60);
-            $table->string('image', 255);
+            $table->string('session_id');
+            $table->integer('user_id')->nullable();
+            $table->integer('product_id');
+            $table->string('quantity')->default(1);
+            $table->string('size');
             $table->double('price',10,2);
-            $table->string('color', 60);
-            $table->longtext('description');
         });
     }
 
@@ -32,6 +31,6 @@ class CreateJordansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jordans');
+        Schema::dropIfExists('carts');
     }
 }

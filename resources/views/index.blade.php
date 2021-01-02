@@ -60,7 +60,7 @@
                             <li class="box-header">Apparel</li>
                             <p class="small-text">Your chance to grab some nice clothes to match with your new shoes</p>
                             <li class="shop-now">
-                                <a href="/apparel">Shop</a>
+                                <a href="/Apparel">Shop</a>
                             </li>
                         </div>
                      
@@ -87,7 +87,7 @@
     <section id="appareal">
         <div class="header">
             <span class="title">Appareal</span>
-            <a href="/apparel">
+            <a href="/Apparel">
                 <span>See All</span>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </a>
@@ -95,7 +95,7 @@
         <div class="cloths"> 
             <div class="container"> 
                 @foreach($clothes as $cloth)
-            <a href="/apparel/{{$cloth->id}}">
+            <a href="/Apparel/{{$cloth->id}}">
                 <div class="clothes-box">
                     <div class="img">
                     <img src="{{$cloth->image}}" alt="">

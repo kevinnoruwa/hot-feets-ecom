@@ -23,11 +23,8 @@
         <form action="/add-to-cart" method="post">
             @csrf
             <input type="hidden" name="product_id" value={{$extras->id}}>
-            <input type="hidden" name="brand" value="{{$extras->brand}}">
-            <input type="hidden" name="name" value="{{$extras->name}}">
-            <input type="hidden" name="price" value="{{$extras->price}}">
-            <input type="hidden" name="image" value="{{$extras->image}}">
-            <input type="hidden" name="size" value="none">
+            <input type="hidden" name="price" value={{$extras->price}}>
+    
             <div class="inside">
                 <div class="extras-img">
                 <img src="{{$extras->image}}" alt="">
@@ -37,7 +34,7 @@
                     <div class="name">{{$extras->name}}</div>
                     <div class="nickname">{{$extras->nickname}}</div>
                     <div class="price">${{$extras->price}}.00</div>
-                    <input max={{10}} min={{1}} placeholder="Qty." type="number" name="quantity" >
+                    <input value={{1}} max={{10}} min={{1}} placeholder="Qty." type="number" name="quantity" >
                     <div class="select">
                         <button class="submit">ADD TO CART</button>
                     </div>

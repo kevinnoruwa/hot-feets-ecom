@@ -20,7 +20,7 @@
         <div class="content">
             <div class="inside">
                 @foreach($clothes as $cloth)
-            <a href="/apparel/{{$cloth->id}}">
+            <a href="/Apparel/{{$cloth->id}}">
                 <div class="shoe-box">
                     <div class="shoe-img">
                     <img src="{{$cloth->image}}" alt="">

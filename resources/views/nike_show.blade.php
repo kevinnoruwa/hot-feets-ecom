@@ -23,10 +23,7 @@
         <form action="/add-to-cart" method="post">
             @csrf 
             <input type="hidden" name="product_id" value={{$shoe->id}}>
-            <input type="hidden" name="brand" value="{{$shoe->brand}}">
-            <input type="hidden" name="name" value="{{$shoe->name}}">
-            <input type="hidden" name="price" value="{{$shoe->price}}">
-            <input type="hidden" name="image" value="{{$shoe->image}}">
+            <input type="hidden" name="price" value={{$shoe->price}}>
             <div class="inside">
                 <div class="shoe-img">
                 <img src="{{$shoe->image}}" alt="">
@@ -36,7 +33,7 @@
                     <div class="name">{{$shoe->name}}</div>
                     <div class="nickname">{{$shoe->nickname}}</div>
                     <div class="price">${{$shoe->price}}.00</div>
-                <input max={{10}} min={{1}} placeholder="Qty." type="number" name="quantity" >
+                    <input value={{1}} max={{10}} min={{1}} placeholder="Qty." type="number" name="quantity" >
                     <div class="select">
                         <select name="size" id="" required>
                             <option value="" disabled selected>--Select a Size--</option>
@@ -68,7 +65,7 @@
         <div class="container">
             <div class="owl-carousel owl-theme">
                 @foreach($footwear as $shoe)
-                <a href="/nike/{{$shoe->id}}">
+                <a href="/Nike/{{$shoe->id}}">
                     <div class="item shoe">
                         <img src="{{$shoe->image}}" alt="">
                             <div class="details">

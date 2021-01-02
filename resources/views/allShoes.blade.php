@@ -19,24 +19,9 @@
         </div>
         <div class="content">
             <div class="inside">
-                @foreach($nike  as $shoe)
-                <a href="/nike/{{$shoe->id}}">
-                    <div class="shoe-box">
-                        <div class="shoe-img">
-                        <img src="{{$shoe->image}}" alt="">
-                        </div>
-                        <div class="details">
-                            <div>{{$shoe->name}}</div>
-                            <div>{{$shoe->nickname}}</div>
-                            <div>${{$shoe->price}}.00</div>
-                        </div>
-                    </div>
-
-                </a>
-              
-                @endforeach
-                @foreach($jordan as $shoe)
-                <a href="/jordan/{{$shoe->id}}">
+         
+                @foreach($shoes as $shoe)
+                <a href="/{{$shoe->brand}}/{{$shoe->id}}">
                     <div class="shoe-box">
                         <div class="shoe-img">
                             <img src="{{$shoe->image}}" alt="">
@@ -49,34 +34,7 @@
                     </div>
                 </a>
                 @endforeach
-                @foreach($adidas as $shoe)
-                <a href="/adidas/{{$shoe->id}}">
-                    <div class="shoe-box">
-                        <div class="shoe-img">
-                            <img src="{{$shoe->image}}" alt="">
-                        </div>
-                        <div class="details">
-                            <div>{{$shoe->name}}</div>
-                            <div>{{$shoe->nickname}}</div>
-                            <div>${{$shoe->price}}.00</div>
-                        </div>
-                    </div>
-                </a>
-                @endforeach
-                @foreach($puma as $shoe)
-                <a href="/puma/{{$shoe->id}}">
-                    <div class="shoe-box">
-                        <div class="shoe-img">
-                            <img src="{{$shoe->image}}" alt="">
-                        </div>
-                        <div class="details">
-                            <div>{{$shoe->name}}</div>
-                            <div>{{$shoe->nickname}}</div>
-                            <div>${{$shoe->price}}.00</div>
-                        </div>
-                    </div>
-                </a>
-                @endforeach
+               
             </div>
         </div>
     </section>

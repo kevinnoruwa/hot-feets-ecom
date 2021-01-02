@@ -42,7 +42,7 @@
                 <a class="shoes-link"href="/allShoes">Shoes</a>
             </li>
             <li>
-                <a href="/apparel"> Apparel</a>
+                <a href="/Apparel"> Apparel</a>
              
             </li>
             <li>
@@ -54,10 +54,10 @@
 
     <div class="inside-shoes">
         <div class="container">
-            <a href="/nike">Nike</a>
-            <a href="/jordan">Jordan</a>
-            <a href="/adidas">Adidas</a>
-            <a href="/puma">Puma</a>
+            <a href="/Nike">Nike</a>
+            <a href="/Jordan">Jordan</a>
+            <a href="/Adidas">Adidas</a>
+            <a href="/Puma">Puma</a>
         </div>
     </div>
     @yield('content')
@@ -90,19 +90,19 @@
                 <a href="/allShoes">All Shoes</a>
             </li>
             <li>
-                <a href="/jordan">Jordans</a>
+                <a href="/Jordan">Jordans</a>
             </li>
             <li>
-                <a href="/adidas">Adidas</a>
+                <a href="/Adidas">Adidas</a>
             </li>
             <li>
-                <a href="/nike">Nike</a>
+                <a href="/Nike">Nike</a>
             </li>
             <li>
-                <a href="/puma">Puma</a>
+                <a href="/Puma">Puma</a>
             </li>
             <li>
-                <a href="/apparel">Apparel</a>
+                <a href="/Apparel">Apparel</a>
             </li>
 
             <li>

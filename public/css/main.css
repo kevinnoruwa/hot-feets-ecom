@@ -251,6 +251,10 @@ li {
         width:100%;
     }
 
+    #apparel-show-section .inside .cloth-img {
+        margin: 0 0 50px;
+      }
+
     #apparel-show-section .inside .show-info .select select {
         width: 480px;
     
@@ -550,6 +554,8 @@ li {
         top: 0;
 
     }
+
+  
 
     #appareal-banner .inside .shoe-img img {
        width: 100%;
@@ -1016,6 +1022,9 @@ li {
         text-align: center;
       
         width: 100%;
+    }
+    #apparel-show-section .inside .cloth-img {
+      margin: 0 0 50px;
     }
  
     #apparel-show-section .inside .shoe-img img {

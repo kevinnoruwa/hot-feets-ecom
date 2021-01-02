@@ -20,19 +20,25 @@ use App\Models\Cart;
                 <ul>
                     <?php $totalPrice = 0?>
 
-                    @forEach($products as $product)
+                  
 
-                    <?php $attrPrice = Cart::getProductAttrPrice($product['product_id'], $product['size']); ?>
+                
+
+                  @foreach($items as $item)
+                  <?php $attrPrice = Cart::getProductAttrPrice($item['product_id'], $item['size']); ?>
+
+                 
+       
 
                     <li>
                         <div class="container">
                             <div class="item-img">
-                            <img src="{{$product->image}}" alt="">
+                            <img src="{{$item['product']['image']}}" alt="">
                             </div>
                             <div class="item-details">
-                                <h6 class="name">{{$product->name}}</h6>
-                            <input  max={{10}} min={{1}} type="number" placeholder="Qty: {{$product->quantity}}" disabled >
-                                <form action="/item/{{$product->id}}" method="post">
+                                <h6 class="name">{{$item['product']['name']}}</h6>
+                            <input  max={{10}} min={{1}} type="number" placeholder="Qty: {{$item['quantity']}} " disabled >
+                                <form action="/item/{{$item['id']}}" method="post">
 
                                     @csrf 
                                     <input type="hidden" name="_method" value="delete">
@@ -42,20 +48,23 @@ use App\Models\Cart;
                                
                             </div>
                             <div class="item-price">
-                                <span class="highlight">${{ $product->price  * $product->quantity }}</span>
+                                <span class="highlight">${{$item['product']['price'] * $item['quantity']   }}</span>
        
        
                             </div>
                         </div>
                     </li>
-                    <?php $totalPrice = $totalPrice + $attrPrice  *  $product->quantity ?>
-                    @endforEach
+
+                    <?php $totalPrice = $totalPrice + $attrPrice  * $item['quantity']?>
+                    @endforeach
+                 
                 </ul>
             </div>
             <div class="total-box">
-            <span>{{count($products) >  0 ? "Subtotal" : null }}( {{count($products)}} {{count($products) !== 1 ? "items" : "item"}} ): 
-            <span class="highlight">${{$totalPrice}}</span>
-                </span>
+            <span>
+                {{count($items) >  0 ? "Subtotal" : null }}( {{count($items)}} {{count($items) !== 1 ? "items" : "item"}} ): 
+                <span class="highlight">${{$totalPrice}}</span>
+            </span>
                 <button class="btn-submit">Proceed to Buy</button>
             </div>
         </div>
