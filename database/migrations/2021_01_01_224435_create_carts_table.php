@@ -13,7 +13,7 @@ class CreateCartsTable extends Migration
      */
     public function up()
     {
-        Schema::create('Carts', function (Blueprint $table) {
+        Schema::create('carts', function (Blueprint $table) {
             $table->id();
             $table->string('session_id');
             $table->integer('user_id')->nullable();
