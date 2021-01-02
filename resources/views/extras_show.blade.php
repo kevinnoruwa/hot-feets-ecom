@@ -24,6 +24,7 @@
             @csrf
             <input type="hidden" name="product_id" value={{$extras->id}}>
             <input type="hidden" name="price" value={{$extras->price}}>
+            <input type="hidden" name="size" value="null">
     
             <div class="inside">
                 <div class="extras-img">
