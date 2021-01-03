@@ -6,7 +6,7 @@
         <div class="breadcrumbs"> 
             <a href="/">Home</a>
             <span>/</span>
-            <a href="/Extras">{{$extras->brand}}</a>
+            <a href="/extras">{{$extras->brand}}</a>
             <span>/</span>
             <span>{{$extras->name}}</span>
         </div>
